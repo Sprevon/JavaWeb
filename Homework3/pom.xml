@@ -6,9 +6,9 @@
         <artifactId>WebCourse</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>Quiz1</artifactId>
+    <artifactId>Homework3</artifactId>
     <packaging>war</packaging>
-    <name>Quiz1 Maven Webapp</name>
+    <name>Homework3 Maven Webapp</name>
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>
@@ -17,9 +17,8 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
     <build>
-        <finalName>Quiz1</finalName>
+        <finalName>Homework3</finalName>
     </build>
 </project>
