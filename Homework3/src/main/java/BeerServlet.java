@@ -1,3 +1,4 @@
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -5,6 +6,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * @Comments
@@ -15,10 +18,15 @@ import java.io.PrintWriter;
 public class BeerServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setContentType("text/html");
-        PrintWriter printWriter = resp.getWriter();
-        printWriter.println("Beer Selection Advice<br>");
-        printWriter.println("<br>Got beer color " + req.getParameter("color"));
+        String c = req.getParameter("color");
+        BeerExpert beerExpert = new BeerExpert();
+        List<String> result = beerExpert.getBrands(c);
+        req.setAttribute("style", result);
+        req.setAttribute("color", c);
+
+        RequestDispatcher view = req.getRequestDispatcher("advice.jsp");
+        view.forward(req, resp);
+
     }
 
     @Override
