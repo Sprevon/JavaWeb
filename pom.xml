@@ -11,6 +11,7 @@
     <modules>
         <module>Quiz1</module>
         <module>Homework3</module>
+        <module>Quiz2</module>
     </modules>
 
     <properties>
