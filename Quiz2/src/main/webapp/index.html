@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="/WebCourseQuiz/quiz21" method="post">
+        <table>
+            <thead><tr><td colspan="2"><h3>图形面积计算</h3></td></tr></thead>
+            <tbody>
+                <tr>
+                    <td>选择图形</td>
+                    <td>
+                        <label for="shape">
+                            <select name="shape" id="shape">
+                                <option value="circle">圆</option>
+                                <option value="square">正方形</option>
+                            </select>
+                        </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>输入半径（边长）</td>
+                    <td>
+                        <input type="number" name="length" id="length">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="submit">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
