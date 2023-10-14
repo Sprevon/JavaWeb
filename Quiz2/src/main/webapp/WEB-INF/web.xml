@@ -12,4 +12,22 @@
     <servlet-name>Servlet1</servlet-name>
     <url-pattern>/quiz21</url-pattern>
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Servlet2</servlet-name>
+    <servlet-class>Servlet2</servlet-class>
+    <init-param>
+      <param-name>welcome</param-name>
+      <param-value>welcome you</param-value>
+    </init-param>
+    <init-param>
+      <param-name>name</param-name>
+      <param-value>zhang san</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet2</servlet-name>
+    <url-pattern>/quiz22</url-pattern>
+  </servlet-mapping>
+
 </web-app>
