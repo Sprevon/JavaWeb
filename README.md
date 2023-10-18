@@ -10,7 +10,9 @@ Application content设置: /WebCourseQuiz
 <hr>
 20231016-陈博文-第五章作业：Homework5文件夹<br>
 Application content设置: /Homework5
-
+<hr>
+20231018-陈博文-第六章作业：Homework6文件夹<br>
+Application context设置:/homework
 
 
 <hr>
