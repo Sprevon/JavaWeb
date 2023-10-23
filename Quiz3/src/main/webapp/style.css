@@ -1,0 +1,55 @@
+:root{
+    --row-height:40px;
+    --row-width:1280px;
+
+    --label-width:120px;
+}
+
+body{
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 使内容垂直居中 */
+    font-weight: normal;
+}
+
+tr{
+    border: black;
+    height: var(--row-height);
+    width: var(--row-width);
+    line-height: var(--row-height);
+}
+
+table,
+td {
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+label{
+    width: var(--label-width);
+    text-align: right;
+    display: inline-block;
+}
+
+input{
+    width: var(--row-width) - var(--label-width);
+    text-align: left;
+    margin: 10px;
+}
+
+.tag{
+    background-color: #defdfd;
+}
+
+.submit{
+    text-align: center;
+    height: 30px;
+    width: auto;
+    background-color: darkslateblue;
+    color: white;
+    margin: 20px;
+}
+
