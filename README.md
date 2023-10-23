@@ -13,6 +13,9 @@ Application content设置: /Homework5
 <hr>
 20231018-陈博文-第六章作业：Homework6文件夹<br>
 Application context设置:/homework
+<hr>
+20231023-陈博文-第三次小测：Quiz3文件夹<br>
+Application context设置:/quiz
 
 
 <hr>
