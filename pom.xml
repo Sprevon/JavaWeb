@@ -15,6 +15,7 @@
         <module>Homework5</module>
         <module>Homework6</module>
         <module>Quiz3</module>
+        <module>Homework7</module>
     </modules>
 
     <properties>
@@ -28,11 +29,13 @@
             <groupId>javax.servlet.jsp</groupId>
             <artifactId>jsp-api</artifactId>
             <version>2.2.1-b03</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>4.0.1</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
