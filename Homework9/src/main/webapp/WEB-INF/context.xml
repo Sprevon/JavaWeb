@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context>
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+    <Resource name="datasource"
+              type="javax.sql.DataSource"
+              user="root"
+              password="SevenUv7"
+              driver="com.mysql.cj.jdbc.Driver"
+              maxIdle="5"
+              maxWait="5000"
+              url="jdbc:mysql://127.0.0.1:3306/contract_manage_system?user=root"/>
+</Context>
