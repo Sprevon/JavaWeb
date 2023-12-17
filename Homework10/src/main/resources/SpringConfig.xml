@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="springBean" name="springBean" class="SpringBean">
+
+        <constructor-arg index="0" value="springBean1"/>
+        <constructor-arg index="1" ref="innerBean1"/>
+    </bean>
+
+    <bean id="innerBean1" name="innerBean" class="InnerBean">
+        <constructor-arg type="java.lang.String" name="innerBeanName" value="innerBean1"/>
+    </bean>
+</beans>
